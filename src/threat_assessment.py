@@ -170,7 +170,11 @@ class ThreatAssessor:
     ) -> ThreatAssessment:
         cfg = self.config
         magnitude = self.magnitude_factor(score, threshold)
-        confidence = self.confidence_factor(stat_score, if_score, magnitude)
+        # Agreement between scorers is only meaningful when the observation
+        # actually exceeds the threshold; otherwise a benign, perfectly
+        # consistent observation must not contribute operational risk.
+        confidence = (self.confidence_factor(stat_score, if_score, magnitude)
+                      if magnitude > 0.0 else 0.0)
         criticality = self.criticality_factor(device_id)
         context = self.context_factor(anomalous_share, traffic_share)
         total_weight = max(cfg.w_magnitude + cfg.w_confidence + cfg.w_criticality
