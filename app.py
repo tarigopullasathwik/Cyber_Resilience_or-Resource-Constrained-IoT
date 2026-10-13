@@ -769,5 +769,29 @@ def main() -> None:
         page_method(data)
 
 
+def app(environ, start_response):
+    """Minimal WSGI entrypoint for Vercel's Python runtime.
+
+    The full interactive dashboard remains a Streamlit application and should be
+    launched with ``streamlit run app.py``. Vercel cannot host Streamlit's
+    long-lived websocket server, so the serverless deployment exposes a small
+    health/status response instead of attempting to start Streamlit at import
+    time.
+    """
+    body = (
+        "Adaptive Edge Cyber-Resilience\n\n"
+        "The research dashboard is a local Streamlit simulation. "
+        "Run: python -m streamlit run app.py\n"
+    ).encode("utf-8")
+    start_response(
+        "200 OK",
+        [
+            ("Content-Type", "text/plain; charset=utf-8"),
+            ("Content-Length", str(len(body))),
+        ],
+    )
+    return [body]
+
+
 if __name__ == "__main__":
     main()
