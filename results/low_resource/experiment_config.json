@@ -1,0 +1,138 @@
+{
+  "scenario": "low_resource",
+  "seed": 20261013,
+  "config": {
+    "seed": 20261013,
+    "n_devices": 24,
+    "n_steps": 360,
+    "calibration_steps": 120,
+    "warmup_steps": 130,
+    "step_seconds": 5.0,
+    "attacked_device_fraction": 0.45,
+    "held_out_fraction": 0.4,
+    "include_benign_shift": true,
+    "low_resource_edge": true,
+    "detector": {
+      "z_scale": 4.0,
+      "stat_max_weight": 0.5,
+      "stat_min_scale": 0.001,
+      "if_contamination": 0.05,
+      "if_n_estimators": 120,
+      "if_max_samples": 128,
+      "stat_weight": 0.6,
+      "if_weight": 0.4,
+      "initial_threshold_quantile": 0.995,
+      "threshold_ewma_alpha": 0.002,
+      "threshold_min": 0.05,
+      "threshold_max": 0.95,
+      "static_threshold_auto": true,
+      "static_threshold": 0.3,
+      "threshold_quantile": 0.995,
+      "threshold_margin": 1.05,
+      "threshold_robust_k": 3.0,
+      "min_calibration_rows_per_device": 20,
+      "threshold_window": 400,
+      "threshold_window_quantile": 0.99,
+      "threshold_min_samples": 40,
+      "unfreeze_score_fraction": 1.0,
+      "freeze_score_multiplier": 1.0,
+      "unfreeze_patience": 12
+    },
+    "learning": {
+      "learning_rate_clean": 0.05,
+      "learning_rate_drift": 0.04,
+      "drift_release_learning_rate": 0.1,
+      "drift_zone_fraction": 0.6,
+      "drift_patience": 10,
+      "drift_max_resource_delta": 0.15,
+      "max_single_update_fraction": 0.15,
+      "min_scale": 0.25,
+      "min_scale_fraction": 0.03,
+      "freeze_patience": 10,
+      "learning_min_allowance": 0.25,
+      "drift_max_volume_ratio": 2.2,
+      "drift_min_volume_ratio": 0.25,
+      "drift_max_abs_z": 3.0,
+      "drift_max_failed_auth": 0.0,
+      "drift_require_normal_protocol": true
+    },
+    "severity": {
+      "w_magnitude": 0.35,
+      "w_confidence": 0.25,
+      "w_criticality": 0.2,
+      "w_network_context": 0.2,
+      "magnitude_saturation": 3.0,
+      "severity_min": 0.0,
+      "severity_max": 100.0,
+      "criticality_values": {
+        "low": 0.25,
+        "medium": 0.5,
+        "high": 0.75,
+        "critical": 1.0
+      }
+    },
+    "containment": {
+      "observe_max": 25.0,
+      "rate_limit_max": 50.0,
+      "reauth_max": 75.0,
+      "critical_quarantine_severity": 85.0,
+      "cooldown_steps": 4,
+      "escalation_severity_jump": 18.0,
+      "recovery_steps": 8,
+      "levels": [
+        "OBSERVE",
+        "RATE_LIMIT",
+        "REAUTHENTICATE",
+        "QUARANTINE"
+      ],
+      "action_cost": {
+        "OBSERVE": 0.01,
+        "RATE_LIMIT": 0.045,
+        "REAUTHENTICATE": 0.09,
+        "QUARANTINE": 0.14
+      },
+      "action_traffic_allowance": {
+        "OBSERVE": 1.0,
+        "RATE_LIMIT": 0.35,
+        "REAUTHENTICATE": 0.1,
+        "QUARANTINE": 0.0
+      },
+      "min_cpu_headroom_for_action": 0.06,
+      "require_graduated_escalation": true,
+      "sustained_anomaly_steps": 12
+    },
+    "resources": {
+      "cpu_capacity": 0.36,
+      "memory_capacity_mb": 128.0,
+      "bandwidth_capacity_kbps": 512.0,
+      "feature_extract_cpu_per_device": 0.004,
+      "detect_cpu_per_device": 0.006,
+      "policy_cpu_per_device": 0.002,
+      "memory_per_device_mb": 3.2,
+      "edge_base_latency_ms": 26.0,
+      "edge_latency_ms_per_device": 0.85,
+      "cloud_rtt_ms": 95.0,
+      "cloud_record_bytes": 420,
+      "cloud_base_latency_ms": 140.0
+    },
+    "verification": {
+      "observation_window": 4,
+      "success_score_reduction": 0.35,
+      "success_absolute_score": 0.2,
+      "outcome_success": "SUCCESS",
+      "outcome_failure": "FAILURE",
+      "outcome_inconclusive": "INCONCLUSIVE",
+      "max_escalations": 3
+    }
+  },
+  "metadata": {
+    "generated_utc": "2026-10-13T16:38:07+00:00",
+    "python": "3.12.2",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scenario": "low_resource",
+    "note": "All attack, telemetry and resource data are synthetic simulation outputs. Resource figures labelled 'simulated_' come from the edge resource model; figures labelled 'measured_' were measured on this machine while the run executed.",
+    "scikit-learn": "1.9.1"
+  }
+}

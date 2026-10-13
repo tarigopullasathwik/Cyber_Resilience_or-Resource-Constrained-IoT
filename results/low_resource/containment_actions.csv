@@ -1,0 +1,133 @@
+system,step,device_id,kind,action,level,previous_level,severity,score,threshold,reason
+S3_adaptive_closed_loop,123,dev_16,APPLY,RATE_LIMIT,1,0,33.7164,0.628079,0.569922,severity<=50.0|notes:-
+S3_adaptive_closed_loop,133,dev_20,APPLY,RATE_LIMIT,1,0,28.2678,0.448237,0.435787,severity<=50.0|notes:-
+S3_adaptive_closed_loop,134,dev_16,RESTORE,OBSERVE,0,1,27.6815,0.415452,0.569922,full_restore_after_recovery(11 steps)
+S3_adaptive_closed_loop,143,dev_14,APPLY,RATE_LIMIT,1,0,32.515,0.707325,0.549554,severity<=50.0|notes:-
+S3_adaptive_closed_loop,144,dev_02,OBSERVE,OBSERVE,0,0,19.1649,0.598196,0.525362,severity<=25.0
+S3_adaptive_closed_loop,144,dev_20,RESTORE,OBSERVE,0,1,26.8955,0.163847,0.435787,full_restore_after_recovery(11 steps)
+S3_adaptive_closed_loop,147,dev_14,ESCALATE,RATE_LIMIT,1,1,32.9209,,,verification_failure|notes:-
+S3_adaptive_closed_loop,151,dev_14,ESCALATE,RATE_LIMIT,1,1,31.9706,,,verification_failure|notes:-
+S3_adaptive_closed_loop,154,dev_07,APPLY,RATE_LIMIT,1,0,30.3571,0.524436,0.41546,severity<=50.0|notes:-
+S3_adaptive_closed_loop,155,dev_14,MAX_LEVEL,RATE_LIMIT,1,1,33.2506,,,verification_failed_at_max_level
+S3_adaptive_closed_loop,157,dev_14,ESCALATE,RATE_LIMIT,1,1,32.714,0.707231,0.549554,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,158,dev_14,ESCALATE,RATE_LIMIT,1,1,33.2933,0.710837,0.549554,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,159,dev_14,ESCALATE,RATE_LIMIT,1,1,34.1438,0.736428,0.549554,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,163,dev_20,APPLY,RATE_LIMIT,1,0,31.6927,0.535335,0.433917,severity<=50.0|notes:-
+S3_adaptive_closed_loop,168,dev_07,ESCALATE,RATE_LIMIT,1,1,33.0629,0.585099,0.41546,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,169,dev_07,ESCALATE,RATE_LIMIT,1,1,33.0495,0.579905,0.41546,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,170,dev_07,ESCALATE,RATE_LIMIT,1,1,31.2792,0.547628,0.41546,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,170,dev_14,RESTORE,OBSERVE,0,1,24.5545,0.266927,0.549554,full_restore_after_recovery(27 steps)
+S3_adaptive_closed_loop,171,dev_07,ESCALATE,RATE_LIMIT,1,1,31.415,0.555822,0.41546,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,172,dev_07,ESCALATE,RATE_LIMIT,1,1,32.845,0.580146,0.41546,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,173,dev_07,ESCALATE,RATE_LIMIT,1,1,31.255,0.561977,0.41546,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,174,dev_07,ESCALATE,RATE_LIMIT,1,1,31.5082,0.551866,0.41546,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,174,dev_20,RESTORE,OBSERVE,0,1,28.4373,0.263356,0.433917,full_restore_after_recovery(11 steps)
+S3_adaptive_closed_loop,175,dev_07,ESCALATE,RATE_LIMIT,1,1,30.3717,0.553116,0.41546,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,176,dev_07,ESCALATE,RATE_LIMIT,1,1,34.5731,0.60421,0.41546,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,177,dev_07,ESCALATE,RATE_LIMIT,1,1,30.4279,0.55144,0.41546,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,185,dev_12,OBSERVE,OBSERVE,0,0,19.4983,0.393855,0.357198,severity<=25.0
+S3_adaptive_closed_loop,187,dev_00,OBSERVE,OBSERVE,0,0,24.5557,0.444269,0.429723,severity<=25.0
+S3_adaptive_closed_loop,188,dev_07,RESTORE,OBSERVE,0,1,22.6993,0.269541,0.41546,full_restore_after_recovery(34 steps)
+S3_adaptive_closed_loop,191,dev_19,APPLY,RATE_LIMIT,1,0,25.6523,0.703002,0.574468,severity<=50.0|notes:-
+S3_adaptive_closed_loop,192,dev_15,OBSERVE,OBSERVE,0,0,23.218,0.365802,0.338296,severity<=25.0
+S3_adaptive_closed_loop,192,dev_23,APPLY,RATE_LIMIT,1,0,32.1522,0.526114,0.476956,severity<=50.0|notes:-
+S3_adaptive_closed_loop,195,dev_19,ESCALATE,RATE_LIMIT,1,1,26.1236,,,verification_failure|notes:-
+S3_adaptive_closed_loop,198,dev_13,APPLY,RATE_LIMIT,1,0,30.0881,0.540648,0.536719,severity<=50.0|notes:-
+S3_adaptive_closed_loop,199,dev_19,ESCALATE,RATE_LIMIT,1,1,27.0323,,,verification_failure|notes:-
+S3_adaptive_closed_loop,203,dev_00,APPLY,RATE_LIMIT,1,0,35.2607,0.568114,0.429414,severity<=50.0|notes:-
+S3_adaptive_closed_loop,203,dev_19,MAX_LEVEL,RATE_LIMIT,1,1,25.3781,,,verification_failed_at_max_level
+S3_adaptive_closed_loop,205,dev_01,OBSERVE,OBSERVE,0,0,22.9931,0.556941,0.537823,severity<=25.0
+S3_adaptive_closed_loop,205,dev_19,ESCALATE,RATE_LIMIT,1,1,26.9012,0.692464,0.574468,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,206,dev_19,ESCALATE,RATE_LIMIT,1,1,27.0183,0.688893,0.574468,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,207,dev_00,ESCALATE,RATE_LIMIT,1,1,38.2642,,,verification_failure|notes:-
+S3_adaptive_closed_loop,209,dev_21,OBSERVE,OBSERVE,0,0,23.2261,0.474794,0.469739,severity<=25.0
+S3_adaptive_closed_loop,211,dev_00,ESCALATE,RATE_LIMIT,1,1,38.3782,,,verification_failure|notes:-
+S3_adaptive_closed_loop,212,dev_23,RESTORE,OBSERVE,0,1,32.3262,0.400985,0.476956,full_restore_after_recovery(20 steps)
+S3_adaptive_closed_loop,215,dev_00,MAX_LEVEL,RATE_LIMIT,1,1,35.8398,,,verification_failed_at_max_level
+S3_adaptive_closed_loop,217,dev_00,ESCALATE,RATE_LIMIT,1,1,38.3567,0.630411,0.429414,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,217,dev_19,RESTORE,OBSERVE,0,1,17.5734,0.436479,0.574468,full_restore_after_recovery(26 steps)
+S3_adaptive_closed_loop,218,dev_00,ESCALATE,RATE_LIMIT,1,1,39.356,0.645885,0.429414,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,219,dev_00,ESCALATE,RATE_LIMIT,1,1,39.3739,0.644391,0.429414,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,219,dev_13,RESTORE,OBSERVE,0,1,27.6209,0.446418,0.536719,full_restore_after_recovery(21 steps)
+S3_adaptive_closed_loop,220,dev_00,ESCALATE,RATE_LIMIT,1,1,33.0888,0.557082,0.429414,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,220,dev_13,HOLD,OBSERVE,0,0,30.0861,0.540755,0.536719,"cooldown_guard(desired=RATE_LIMIT,reason=severity<=50.0)"
+S3_adaptive_closed_loop,220,dev_16,APPLY,RATE_LIMIT,1,0,37.8919,0.718373,0.566359,severity<=50.0|notes:-
+S3_adaptive_closed_loop,221,dev_00,ESCALATE,RATE_LIMIT,1,1,39.4039,0.633,0.429414,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,221,dev_18,OBSERVE,OBSERVE,0,0,18.4872,0.571856,0.535341,severity<=25.0
+S3_adaptive_closed_loop,222,dev_00,ESCALATE,RATE_LIMIT,1,1,37.365,0.604518,0.429414,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,223,dev_00,ESCALATE,RATE_LIMIT,1,1,36.1588,0.595113,0.429414,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,224,dev_00,ESCALATE,RATE_LIMIT,1,1,37.1349,0.607888,0.429414,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,225,dev_00,ESCALATE,RATE_LIMIT,1,1,37.1189,0.602634,0.429414,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,226,dev_00,ESCALATE,RATE_LIMIT,1,1,40.476,0.656474,0.429414,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,227,dev_00,ESCALATE,RATE_LIMIT,1,1,39.7348,0.646879,0.429414,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,228,dev_00,ESCALATE,RATE_LIMIT,1,1,36.0586,0.587951,0.429414,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,229,dev_00,ESCALATE,RATE_LIMIT,1,1,32.7937,0.552047,0.429414,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,229,dev_21,OBSERVE,OBSERVE,0,0,23.0693,0.492886,0.469285,severity<=25.0
+S3_adaptive_closed_loop,230,dev_00,ESCALATE,RATE_LIMIT,1,1,34.5994,0.565628,0.429414,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,231,dev_00,ESCALATE,RATE_LIMIT,1,1,38.3505,0.62805,0.429414,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,232,dev_00,ESCALATE,RATE_LIMIT,1,1,40.2535,0.65814,0.429414,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,233,dev_23,APPLY,RATE_LIMIT,1,0,34.0853,0.505641,0.47658,severity<=50.0|notes:-
+S3_adaptive_closed_loop,235,dev_16,RESTORE,OBSERVE,0,1,25.4089,0.36458,0.566359,full_restore_after_recovery(15 steps)
+S3_adaptive_closed_loop,237,dev_22,OBSERVE,OBSERVE,0,0,15.2752,0.554082,0.540381,severity<=25.0
+S3_adaptive_closed_loop,241,dev_16,APPLY,RATE_LIMIT,1,0,30.755,0.574381,0.566329,severity<=50.0|notes:-
+S3_adaptive_closed_loop,243,dev_00,RESTORE,OBSERVE,0,1,27.1207,0.126533,0.429414,full_restore_after_recovery(40 steps)
+S3_adaptive_closed_loop,244,dev_18,OBSERVE,OBSERVE,0,0,16.7847,0.575389,0.534682,severity<=25.0
+S3_adaptive_closed_loop,245,dev_16,MAX_LEVEL,RATE_LIMIT,1,1,30.1008,,,verification_failed_at_max_level
+S3_adaptive_closed_loop,245,dev_23,RESTORE,OBSERVE,0,1,31.402,0.408895,0.47658,full_restore_after_recovery(12 steps)
+S3_adaptive_closed_loop,254,dev_06,APPLY,RATE_LIMIT,1,0,35.3393,0.714226,0.601893,severity<=50.0|notes:-
+S3_adaptive_closed_loop,265,dev_06,ESCALATE,RATE_LIMIT,1,1,35.2059,0.713462,0.601893,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,266,dev_06,ESCALATE,RATE_LIMIT,1,1,35.1959,0.71254,0.601893,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,267,dev_06,ESCALATE,RATE_LIMIT,1,1,35.2743,0.717603,0.601893,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,268,dev_06,ESCALATE,RATE_LIMIT,1,1,35.2111,0.713598,0.601893,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,268,dev_20,APPLY,RATE_LIMIT,1,0,33.1078,0.532403,0.425836,severity<=50.0|notes:-
+S3_adaptive_closed_loop,269,dev_06,ESCALATE,RATE_LIMIT,1,1,35.7095,0.712597,0.601893,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,270,dev_06,ESCALATE,RATE_LIMIT,1,1,35.3026,0.71791,0.601893,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,271,dev_06,ESCALATE,RATE_LIMIT,1,1,35.2697,0.717053,0.601893,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,272,dev_17,OBSERVE,OBSERVE,0,0,21.0666,0.498624,0.474677,severity<=25.0
+S3_adaptive_closed_loop,275,dev_08,OBSERVE,OBSERVE,0,0,15.8779,0.595616,0.552687,severity<=25.0
+S3_adaptive_closed_loop,279,dev_08,OBSERVE,OBSERVE,0,0,19.5228,0.647988,0.552687,severity<=25.0
+S3_adaptive_closed_loop,279,dev_20,RESTORE,OBSERVE,0,1,27.102,0.106538,0.425836,full_restore_after_recovery(11 steps)
+S3_adaptive_closed_loop,282,dev_06,RESTORE,OBSERVE,0,1,26.2726,0.363546,0.601893,full_restore_after_recovery(28 steps)
+S3_adaptive_closed_loop,283,dev_00,APPLY,RATE_LIMIT,1,0,30.6566,0.507605,0.425522,severity<=50.0|notes:-
+S3_adaptive_closed_loop,283,dev_02,OBSERVE,OBSERVE,0,0,15.886,0.533783,0.519426,severity<=25.0
+S3_adaptive_closed_loop,283,dev_08,OBSERVE,OBSERVE,0,0,19.6733,0.654664,0.552687,severity<=25.0
+S3_adaptive_closed_loop,285,dev_18,OBSERVE,OBSERVE,0,0,16.5269,0.555685,0.532718,severity<=25.0
+S3_adaptive_closed_loop,287,dev_08,OBSERVE,OBSERVE,0,0,19.9391,0.65939,0.552687,severity<=25.0
+S3_adaptive_closed_loop,287,dev_23,APPLY,RATE_LIMIT,1,0,33.2238,0.549138,0.475986,severity<=50.0|notes:-
+S3_adaptive_closed_loop,289,dev_20,APPLY,RATE_LIMIT,1,0,31.8908,0.525908,0.42524,severity<=50.0|notes:-
+S3_adaptive_closed_loop,290,dev_01,APPLY,RATE_LIMIT,1,0,26.9011,0.642396,0.532364,severity<=50.0|notes:-
+S3_adaptive_closed_loop,294,dev_00,RESTORE,OBSERVE,0,1,26.3667,0.139552,0.425522,full_restore_after_recovery(11 steps)
+S3_adaptive_closed_loop,296,dev_01,OBSERVE,OBSERVE,0,0,20.9548,0.553709,0.532364,severity<=25.0
+S3_adaptive_closed_loop,298,dev_23,RESTORE,OBSERVE,0,1,30.8886,0.146428,0.475986,full_restore_after_recovery(11 steps)
+S3_adaptive_closed_loop,300,dev_01,OBSERVE,OBSERVE,0,0,23.9192,0.604723,0.532364,severity<=25.0
+S3_adaptive_closed_loop,300,dev_20,RESTORE,OBSERVE,0,1,27.2687,0.272459,0.42524,full_restore_after_recovery(11 steps)
+S3_adaptive_closed_loop,301,dev_01,ESCALATE,RATE_LIMIT,1,1,26.316,0.644573,0.532364,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,301,dev_02,OBSERVE,OBSERVE,0,0,14.9567,0.523965,0.519246,severity<=25.0
+S3_adaptive_closed_loop,302,dev_01,ESCALATE,RATE_LIMIT,1,1,25.1773,0.616815,0.532364,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,302,dev_03,APPLY,RATE_LIMIT,1,0,38.3907,0.731543,0.553411,severity<=50.0|notes:-
+S3_adaptive_closed_loop,304,dev_01,ESCALATE,RATE_LIMIT,1,1,27.566,0.657987,0.532364,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,305,dev_01,ESCALATE,RATE_LIMIT,1,1,28.0301,0.667517,0.532364,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,306,dev_01,ESCALATE,RATE_LIMIT,1,1,25.6637,0.623153,0.532364,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,309,dev_15,APPLY,RATE_LIMIT,1,0,33.9387,0.476718,0.334505,severity<=50.0|notes:-
+S3_adaptive_closed_loop,313,dev_03,ESCALATE,RATE_LIMIT,1,1,37.7528,0.728377,0.553411,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,314,dev_03,ESCALATE,RATE_LIMIT,1,1,37.6995,0.725716,0.553411,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,316,dev_18,OBSERVE,OBSERVE,0,0,14.2577,0.534615,0.531587,severity<=25.0
+S3_adaptive_closed_loop,317,dev_01,RESTORE,OBSERVE,0,1,16.5534,0.384475,0.532364,full_restore_after_recovery(27 steps)
+S3_adaptive_closed_loop,318,dev_13,APPLY,RATE_LIMIT,1,0,28.4848,0.539482,0.533553,severity<=50.0|notes:-
+S3_adaptive_closed_loop,320,dev_15,RESTORE,OBSERVE,0,1,26.8512,0.155024,0.334505,full_restore_after_recovery(11 steps)
+S3_adaptive_closed_loop,323,dev_20,APPLY,RATE_LIMIT,1,0,41.3275,0.681235,0.423648,severity<=50.0|notes:-
+S3_adaptive_closed_loop,324,dev_10,APPLY,RATE_LIMIT,1,0,29.4632,0.400644,0.388767,severity<=50.0|notes:-
+S3_adaptive_closed_loop,325,dev_03,RESTORE,OBSERVE,0,1,27.9923,0.49872,0.553411,full_restore_after_recovery(23 steps)
+S3_adaptive_closed_loop,329,dev_13,RESTORE,OBSERVE,0,1,27.918,0.425337,0.533553,full_restore_after_recovery(11 steps)
+S3_adaptive_closed_loop,335,dev_10,RESTORE,OBSERVE,0,1,26.6528,0.170733,0.388767,full_restore_after_recovery(11 steps)
+S3_adaptive_closed_loop,337,dev_09,APPLY,RATE_LIMIT,1,0,25.2317,0.676391,0.551535,severity<=50.0|notes:-
+S3_adaptive_closed_loop,340,dev_20,RESTORE,OBSERVE,0,1,28.091,0.249543,0.423648,full_restore_after_recovery(17 steps)
+S3_adaptive_closed_loop,341,dev_09,OBSERVE,OBSERVE,0,0,24.2435,0.641351,0.551535,severity<=25.0
+S3_adaptive_closed_loop,343,dev_21,OBSERVE,OBSERVE,0,0,22.0106,0.470674,0.46329,severity<=25.0
+S3_adaptive_closed_loop,349,dev_09,OBSERVE,OBSERVE,0,0,24.9577,0.657754,0.551535,severity<=25.0
+S3_adaptive_closed_loop,350,dev_09,ESCALATE,RATE_LIMIT,1,1,27.0516,0.699358,0.551535,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,352,dev_09,ESCALATE,RATE_LIMIT,1,1,26.3406,0.686789,0.551535,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,353,dev_09,ESCALATE,RATE_LIMIT,1,1,25.2081,0.665981,0.551535,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,354,dev_09,ESCALATE,RATE_LIMIT,1,1,25.1213,0.665659,0.551535,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,356,dev_09,ESCALATE,RATE_LIMIT,1,1,26.9408,0.697069,0.551535,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,358,dev_17,OBSERVE,OBSERVE,0,0,22.2293,0.466394,0.459121,severity<=25.0

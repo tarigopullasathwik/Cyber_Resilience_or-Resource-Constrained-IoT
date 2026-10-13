@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Generated experiment artifacts (regenerate with: python -m src.experiment_runner)
+# results/
+# figures/
+
+# Local scratch/logs
+*.log

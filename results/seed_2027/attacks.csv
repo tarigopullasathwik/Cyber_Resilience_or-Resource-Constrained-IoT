@@ -1,0 +1,12 @@
+attack_id,device_id,attack_type,held_out,start_step,end_step,duration
+spoofing-00,dev_11,spoofing,True,131,147,17
+stealth_exfiltration-01,dev_13,stealth_exfiltration,True,153,177,25
+spoofing-02,dev_16,spoofing,True,163,178,16
+stealth_exfiltration-03,dev_08,stealth_exfiltration,True,170,190,21
+flood-04,dev_03,flood,False,183,197,15
+port_scan-05,dev_10,port_scan,False,205,216,12
+brute_force-06,dev_19,brute_force,False,222,240,19
+exfiltration-07,dev_02,exfiltration,False,228,244,17
+flood-08,dev_01,flood,False,244,259,16
+port_scan-09,dev_20,port_scan,False,254,271,18
+brute_force-10,dev_17,brute_force,False,257,277,21

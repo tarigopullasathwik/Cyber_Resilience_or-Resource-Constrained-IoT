@@ -1,0 +1,10 @@
+# Adaptive Edge Cyber-Resilience simulation - runtime dependencies
+# Install with:  python -m pip install -r requirements.txt
+# Tested with Python 3.11 / 3.12 on Windows 11. No GPU, no cloud account,
+# no paid API and no internet access is required at runtime.
+numpy>=1.26,<3
+pandas>=2.1,<4
+scikit-learn>=1.3,<2
+matplotlib>=3.8,<4
+streamlit>=1.49,<2
+pytest>=7.4

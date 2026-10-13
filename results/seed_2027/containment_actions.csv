@@ -1,0 +1,131 @@
+system,step,device_id,kind,action,level,previous_level,severity,score,threshold,reason
+S3_adaptive_closed_loop,122,dev_05,APPLY,RATE_LIMIT,1,0,34.1996,0.595056,0.432502,severity<=50.0|notes:-
+S3_adaptive_closed_loop,131,dev_11,APPLY,RATE_LIMIT,1,0,30.4279,0.677377,0.47914,severity<=50.0|notes:-
+S3_adaptive_closed_loop,133,dev_05,RESTORE,OBSERVE,0,1,25.7618,0.149906,0.432502,full_restore_after_recovery(11 steps)
+S3_adaptive_closed_loop,135,dev_11,ESCALATE,REAUTHENTICATE,2,1,31.2003,,,verification_failure|notes:-
+S3_adaptive_closed_loop,135,dev_20,APPLY,RATE_LIMIT,1,0,29.2348,0.361126,0.344146,severity<=50.0|notes:-
+S3_adaptive_closed_loop,139,dev_11,ESCALATE,QUARANTINE,3,2,31.1307,,,verification_failure|notes:-
+S3_adaptive_closed_loop,146,dev_20,RESTORE,OBSERVE,0,1,27.2301,0.125261,0.344146,full_restore_after_recovery(11 steps)
+S3_adaptive_closed_loop,147,dev_11,DE_ESCALATE,REAUTHENTICATE,2,3,0.0,,,probe_before_full_restore
+S3_adaptive_closed_loop,150,dev_20,APPLY,RATE_LIMIT,1,0,30.6344,0.439516,0.344064,severity<=50.0|notes:-
+S3_adaptive_closed_loop,153,dev_13,APPLY,RATE_LIMIT,1,0,30.3941,0.595175,0.557224,severity<=50.0|notes:-
+S3_adaptive_closed_loop,154,dev_14,APPLY,RATE_LIMIT,1,0,26.5452,0.557649,0.55197,severity<=50.0|notes:-
+S3_adaptive_closed_loop,154,dev_20,ESCALATE,REAUTHENTICATE,2,1,28.2687,,,verification_failure|notes:-
+S3_adaptive_closed_loop,154,dev_21,OBSERVE,OBSERVE,0,0,24.5745,0.419861,0.375966,severity<=25.0
+S3_adaptive_closed_loop,156,dev_03,APPLY,RATE_LIMIT,1,0,30.3781,0.461942,0.424536,severity<=50.0|notes:-
+S3_adaptive_closed_loop,156,dev_21,APPLY,RATE_LIMIT,1,0,25.7206,0.451827,0.375966,severity<=50.0|notes:-
+S3_adaptive_closed_loop,157,dev_07,OBSERVE,OBSERVE,0,0,23.5864,0.468335,0.467689,severity<=25.0
+S3_adaptive_closed_loop,157,dev_13,ESCALATE,REAUTHENTICATE,2,1,33.1648,,,verification_failure|notes:-
+S3_adaptive_closed_loop,159,dev_11,DE_ESCALATE,RATE_LIMIT,1,2,22.6218,0.163466,0.47914,probe_before_full_restore
+S3_adaptive_closed_loop,160,dev_21,OBSERVE,OBSERVE,0,0,23.5867,0.388858,0.375966,severity<=25.0
+S3_adaptive_closed_loop,161,dev_13,ESCALATE,QUARANTINE,3,2,33.1228,,,verification_failure|notes:-
+S3_adaptive_closed_loop,163,dev_16,APPLY,RATE_LIMIT,1,0,36.2797,0.679873,0.583412,severity<=50.0|notes:-
+S3_adaptive_closed_loop,165,dev_20,DE_ESCALATE,RATE_LIMIT,1,2,26.4153,0.136676,0.344064,probe_before_full_restore
+S3_adaptive_closed_loop,165,dev_21,OBSERVE,OBSERVE,0,0,24.7441,0.42421,0.375966,severity<=25.0
+S3_adaptive_closed_loop,166,dev_07,APPLY,RATE_LIMIT,1,0,31.5275,0.633508,0.467689,severity<=50.0|notes:-
+S3_adaptive_closed_loop,167,dev_03,RESTORE,OBSERVE,0,1,33.4676,0.179338,0.424536,full_restore_after_recovery(11 steps)
+S3_adaptive_closed_loop,169,dev_06,APPLY,RATE_LIMIT,1,0,31.9738,0.576999,0.56687,severity<=50.0|notes:-
+S3_adaptive_closed_loop,169,dev_13,DE_ESCALATE,REAUTHENTICATE,2,3,0.0,,,probe_before_full_restore
+S3_adaptive_closed_loop,170,dev_08,OBSERVE,OBSERVE,0,0,17.7197,0.591954,0.530047,severity<=25.0
+S3_adaptive_closed_loop,170,dev_13,RE_APPLY,QUARANTINE,3,2,33.8371,0.627078,0.557224,probe_revealed_persistent_anomaly
+S3_adaptive_closed_loop,171,dev_11,RESTORE,OBSERVE,0,1,22.9334,0.167627,0.478302,full_restore_after_recovery(40 steps)
+S3_adaptive_closed_loop,174,dev_08,OBSERVE,OBSERVE,0,0,22.3705,0.651567,0.530047,severity<=25.0
+S3_adaptive_closed_loop,174,dev_16,ESCALATE,REAUTHENTICATE,2,1,37.6159,0.707616,0.583412,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,175,dev_16,ESCALATE,QUARANTINE,3,2,36.6191,0.700084,0.583412,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,175,dev_21,OBSERVE,OBSERVE,0,0,23.7571,0.408434,0.375966,severity<=25.0
+S3_adaptive_closed_loop,177,dev_07,RESTORE,OBSERVE,0,1,21.4392,0.379414,0.467689,full_restore_after_recovery(11 steps)
+S3_adaptive_closed_loop,178,dev_08,OBSERVE,OBSERVE,0,0,21.7497,0.647284,0.530047,severity<=25.0
+S3_adaptive_closed_loop,178,dev_13,DE_ESCALATE,REAUTHENTICATE,2,3,0.0,,,probe_before_full_restore
+S3_adaptive_closed_loop,180,dev_06,RESTORE,OBSERVE,0,1,28.4597,0.401084,0.56687,full_restore_after_recovery(11 steps)
+S3_adaptive_closed_loop,181,dev_21,OBSERVE,OBSERVE,0,0,22.7711,0.380786,0.375966,severity<=25.0
+S3_adaptive_closed_loop,182,dev_08,OBSERVE,OBSERVE,0,0,22.6739,0.662325,0.530047,severity<=25.0
+S3_adaptive_closed_loop,183,dev_03,APPLY,RATE_LIMIT,1,0,46.8857,0.679333,0.423598,severity<=50.0|notes:-
+S3_adaptive_closed_loop,183,dev_16,DE_ESCALATE,REAUTHENTICATE,2,3,0.0,,,probe_before_full_restore
+S3_adaptive_closed_loop,186,dev_08,OBSERVE,OBSERVE,0,0,22.2745,0.654575,0.530047,severity<=25.0
+S3_adaptive_closed_loop,188,dev_19,OBSERVE,OBSERVE,0,0,21.015,0.523963,0.51962,severity<=25.0
+S3_adaptive_closed_loop,189,dev_12,OBSERVE,OBSERVE,0,0,21.4067,0.60132,0.512541,severity<=25.0
+S3_adaptive_closed_loop,189,dev_21,RESTORE,OBSERVE,0,1,23.3528,0.302186,0.375966,full_restore_after_recovery(33 steps)
+S3_adaptive_closed_loop,190,dev_08,OBSERVE,OBSERVE,0,0,23.0492,0.658473,0.530047,severity<=25.0
+S3_adaptive_closed_loop,190,dev_13,DE_ESCALATE,RATE_LIMIT,1,2,28.9324,0.386594,0.557224,probe_before_full_restore
+S3_adaptive_closed_loop,192,dev_20,RESTORE,OBSERVE,0,1,28.5207,0.202238,0.343788,full_restore_after_recovery(42 steps)
+S3_adaptive_closed_loop,194,dev_03,ESCALATE,REAUTHENTICATE,2,1,47.2626,0.693293,0.423598,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,195,dev_03,ESCALATE,QUARANTINE,3,2,46.692,0.692034,0.423598,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,195,dev_16,DE_ESCALATE,RATE_LIMIT,1,2,30.3993,0.335322,0.583412,probe_before_full_restore
+S3_adaptive_closed_loop,196,dev_20,APPLY,RATE_LIMIT,1,0,29.5676,0.365408,0.343788,severity<=50.0|notes:-
+S3_adaptive_closed_loop,198,dev_05,APPLY,RATE_LIMIT,1,0,27.2638,0.491394,0.429212,severity<=50.0|notes:-
+S3_adaptive_closed_loop,200,dev_08,OBSERVE,OBSERVE,0,0,17.3477,0.564721,0.530047,severity<=25.0
+S3_adaptive_closed_loop,200,dev_10,APPLY,RATE_LIMIT,1,0,40.4606,0.579598,0.379626,severity<=50.0|notes:-
+S3_adaptive_closed_loop,202,dev_13,RESTORE,OBSERVE,0,1,30.5043,0.337946,0.55637,full_restore_after_recovery(49 steps)
+S3_adaptive_closed_loop,203,dev_03,DE_ESCALATE,REAUTHENTICATE,2,3,0.0,,,probe_before_full_restore
+S3_adaptive_closed_loop,206,dev_14,ESCALATE,REAUTHENTICATE,2,1,28.1506,0.585105,0.55197,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,207,dev_10,ESCALATE,REAUTHENTICATE,2,1,50.8946,0.766043,0.379626,severity<=75.0|notes:-
+S3_adaptive_closed_loop,207,dev_14,ESCALATE,QUARANTINE,3,2,31.1688,0.642584,0.55197,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,207,dev_20,RESTORE,OBSERVE,0,1,29.4663,0.151418,0.343788,full_restore_after_recovery(11 steps)
+S3_adaptive_closed_loop,208,dev_16,RESTORE,OBSERVE,0,1,31.5799,0.49617,0.583181,full_restore_after_recovery(45 steps)
+S3_adaptive_closed_loop,209,dev_05,RESTORE,OBSERVE,0,1,25.601,0.198134,0.429212,full_restore_after_recovery(11 steps)
+S3_adaptive_closed_loop,213,dev_04,APPLY,RATE_LIMIT,1,0,27.6165,0.435362,0.427614,severity<=50.0|notes:-
+S3_adaptive_closed_loop,213,dev_08,OBSERVE,OBSERVE,0,0,15.4346,0.53867,0.530047,severity<=25.0
+S3_adaptive_closed_loop,215,dev_14,DE_ESCALATE,REAUTHENTICATE,2,3,0.0,,,probe_before_full_restore
+S3_adaptive_closed_loop,216,dev_10,ESCALATE,QUARANTINE,3,2,46.6841,0.698062,0.379626,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,216,dev_14,RE_APPLY,QUARANTINE,3,2,29.3722,0.614488,0.55197,probe_revealed_persistent_anomaly
+S3_adaptive_closed_loop,218,dev_03,DE_ESCALATE,RATE_LIMIT,1,2,30.074,0.149971,0.423598,probe_before_full_restore
+S3_adaptive_closed_loop,219,dev_21,OBSERVE,OBSERVE,0,0,23.8935,0.434558,0.374984,severity<=25.0
+S3_adaptive_closed_loop,222,dev_19,APPLY,RATE_LIMIT,1,0,27.1278,0.653445,0.518608,severity<=50.0|notes:-
+S3_adaptive_closed_loop,223,dev_21,OBSERVE,OBSERVE,0,0,22.5892,0.385188,0.374984,severity<=25.0
+S3_adaptive_closed_loop,224,dev_04,RESTORE,OBSERVE,0,1,27.5547,0.166371,0.427614,full_restore_after_recovery(11 steps)
+S3_adaptive_closed_loop,224,dev_10,DE_ESCALATE,REAUTHENTICATE,2,3,0.0,,,probe_before_full_restore
+S3_adaptive_closed_loop,224,dev_14,DE_ESCALATE,REAUTHENTICATE,2,3,0.0,,,probe_before_full_restore
+S3_adaptive_closed_loop,225,dev_14,RE_APPLY,QUARANTINE,3,2,31.1246,0.649786,0.55197,probe_revealed_persistent_anomaly
+S3_adaptive_closed_loop,228,dev_02,OBSERVE,OBSERVE,0,0,20.7154,0.652235,0.565459,severity<=25.0
+S3_adaptive_closed_loop,228,dev_21,OBSERVE,OBSERVE,0,0,23.3293,0.408112,0.374984,severity<=25.0
+S3_adaptive_closed_loop,230,dev_03,RESTORE,OBSERVE,0,1,33.4242,0.237327,0.423145,full_restore_after_recovery(47 steps)
+S3_adaptive_closed_loop,232,dev_02,OBSERVE,OBSERVE,0,0,17.2616,0.585144,0.565459,severity<=25.0
+S3_adaptive_closed_loop,232,dev_21,APPLY,RATE_LIMIT,1,0,26.1915,0.440987,0.374984,severity<=50.0|notes:-
+S3_adaptive_closed_loop,233,dev_14,DE_ESCALATE,REAUTHENTICATE,2,3,0.0,,,probe_before_full_restore
+S3_adaptive_closed_loop,233,dev_17,APPLY,RATE_LIMIT,1,0,28.3201,0.574986,0.462594,severity<=50.0|notes:-
+S3_adaptive_closed_loop,233,dev_19,ESCALATE,REAUTHENTICATE,2,1,26.9121,0.633299,0.518608,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,234,dev_14,RE_APPLY,QUARANTINE,3,2,32.6058,0.671359,0.55197,probe_revealed_persistent_anomaly
+S3_adaptive_closed_loop,234,dev_19,ESCALATE,QUARANTINE,3,2,28.1268,0.657266,0.518608,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,236,dev_10,DE_ESCALATE,RATE_LIMIT,1,2,25.6797,0.34256,0.379626,probe_before_full_restore
+S3_adaptive_closed_loop,237,dev_02,OBSERVE,OBSERVE,0,0,16.0521,0.586874,0.565459,severity<=25.0
+S3_adaptive_closed_loop,237,dev_10,RE_APPLY,REAUTHENTICATE,2,1,28.4804,0.418171,0.379626,probe_revealed_persistent_anomaly
+S3_adaptive_closed_loop,238,dev_21,OBSERVE,OBSERVE,0,0,23.756,0.416367,0.374984,severity<=25.0
+S3_adaptive_closed_loop,241,dev_02,OBSERVE,OBSERVE,0,0,19.3525,0.632501,0.565459,severity<=25.0
+S3_adaptive_closed_loop,242,dev_14,DE_ESCALATE,REAUTHENTICATE,2,3,0.0,,,probe_before_full_restore
+S3_adaptive_closed_loop,242,dev_19,DE_ESCALATE,REAUTHENTICATE,2,3,0.0,,,probe_before_full_restore
+S3_adaptive_closed_loop,242,dev_20,APPLY,RATE_LIMIT,1,0,28.1106,0.347013,0.342792,severity<=50.0|notes:-
+S3_adaptive_closed_loop,243,dev_14,RE_APPLY,QUARANTINE,3,2,31.9757,0.666718,0.55197,probe_revealed_persistent_anomaly
+S3_adaptive_closed_loop,244,dev_01,APPLY,RATE_LIMIT,1,0,30.6458,0.738786,0.53648,severity<=50.0|notes:-
+S3_adaptive_closed_loop,244,dev_17,RESTORE,OBSERVE,0,1,23.0508,0.184397,0.462594,full_restore_after_recovery(11 steps)
+S3_adaptive_closed_loop,245,dev_08,OBSERVE,OBSERVE,0,0,16.0932,0.547688,0.528893,severity<=25.0
+S3_adaptive_closed_loop,248,dev_10,DE_ESCALATE,RATE_LIMIT,1,2,27.0178,0.30671,0.379626,probe_before_full_restore
+S3_adaptive_closed_loop,249,dev_21,RESTORE,OBSERVE,0,1,22.4935,0.282283,0.374984,full_restore_after_recovery(17 steps)
+S3_adaptive_closed_loop,251,dev_14,DE_ESCALATE,REAUTHENTICATE,2,3,0.0,,,probe_before_full_restore
+S3_adaptive_closed_loop,252,dev_14,RE_APPLY,QUARANTINE,3,2,30.9553,0.649903,0.55197,probe_revealed_persistent_anomaly
+S3_adaptive_closed_loop,253,dev_20,RESTORE,OBSERVE,0,1,27.4021,0.122487,0.342792,full_restore_after_recovery(11 steps)
+S3_adaptive_closed_loop,254,dev_12,OBSERVE,OBSERVE,0,0,15.5454,0.530021,0.512013,severity<=25.0
+S3_adaptive_closed_loop,254,dev_19,DE_ESCALATE,RATE_LIMIT,1,2,16.2172,0.392703,0.518608,probe_before_full_restore
+S3_adaptive_closed_loop,254,dev_20,APPLY,REAUTHENTICATE,2,0,53.2188,0.705167,0.342792,severity<=75.0|notes:-
+S3_adaptive_closed_loop,255,dev_01,ESCALATE,REAUTHENTICATE,2,1,30.4891,0.733433,0.53648,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,256,dev_01,ESCALATE,QUARANTINE,3,2,30.128,0.738256,0.53648,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,257,dev_03,APPLY,RATE_LIMIT,1,0,28.937,0.435128,0.421619,severity<=50.0|notes:-
+S3_adaptive_closed_loop,257,dev_17,APPLY,RATE_LIMIT,1,0,33.2348,0.647047,0.460395,severity<=50.0|notes:-
+S3_adaptive_closed_loop,260,dev_10,RESTORE,OBSERVE,0,1,28.4084,0.37076,0.379166,full_restore_after_recovery(60 steps)
+S3_adaptive_closed_loop,260,dev_14,DE_ESCALATE,REAUTHENTICATE,2,3,0.0,,,probe_before_full_restore
+S3_adaptive_closed_loop,261,dev_14,RE_APPLY,QUARANTINE,3,2,32.9949,0.683726,0.55197,probe_revealed_persistent_anomaly
+S3_adaptive_closed_loop,261,dev_17,ESCALATE,REAUTHENTICATE,2,1,34.8537,,,verification_failure|notes:-
+S3_adaptive_closed_loop,264,dev_01,DE_ESCALATE,REAUTHENTICATE,2,3,0.0,,,probe_before_full_restore
+S3_adaptive_closed_loop,265,dev_20,ESCALATE,QUARANTINE,3,2,52.6543,0.706727,0.342792,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,266,dev_19,RESTORE,OBSERVE,0,1,17.564,0.430112,0.518087,full_restore_after_recovery(44 steps)
+S3_adaptive_closed_loop,268,dev_03,RESTORE,OBSERVE,0,1,30.9695,0.142036,0.421619,full_restore_after_recovery(11 steps)
+S3_adaptive_closed_loop,269,dev_14,DE_ESCALATE,REAUTHENTICATE,2,3,0.0,,,probe_before_full_restore
+S3_adaptive_closed_loop,269,dev_17,ESCALATE,QUARANTINE,3,2,32.6807,0.672547,0.460395,sustained_anomaly_after_effective_response|notes:-
+S3_adaptive_closed_loop,270,dev_14,RE_APPLY,QUARANTINE,3,2,31.3983,0.660311,0.55197,probe_revealed_persistent_anomaly
+S3_adaptive_closed_loop,273,dev_18,OBSERVE,OBSERVE,0,0,17.4258,0.589898,0.532602,severity<=25.0
+S3_adaptive_closed_loop,273,dev_20,DE_ESCALATE,REAUTHENTICATE,2,3,0.0,,,probe_before_full_restore
+S3_adaptive_closed_loop,274,dev_21,OBSERVE,OBSERVE,0,0,23.085,0.409356,0.374756,severity<=25.0
+S3_adaptive_closed_loop,275,dev_03,APPLY,RATE_LIMIT,1,0,31.9486,0.489375,0.421352,severity<=50.0|notes:-
+S3_adaptive_closed_loop,276,dev_01,DE_ESCALATE,RATE_LIMIT,1,2,16.3178,0.381026,0.53648,probe_before_full_restore
+S3_adaptive_closed_loop,277,dev_17,DE_ESCALATE,REAUTHENTICATE,2,3,0.0,,,probe_before_full_restore
+S3_adaptive_closed_loop,278,dev_14,DE_ESCALATE,REAUTHENTICATE,2,3,0.0,,,probe_before_full_restore
+S3_adaptive_closed_loop,279,dev_14,RE_APPLY,QUARANTINE,3,2,30.4208,0.652042,0.55197,probe_revealed_persistent_anomaly
