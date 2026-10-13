@@ -1,11 +1,9 @@
 {
   "version": 2,
   "builds": [
-    { "src": "public/**", "use": "@vercel/static" },
-    { "src": "results/**", "use": "@vercel/static" }
+    { "src": "public/**", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/results/(.*)", "dest": "/results/$1" },
     { "src": "/(.*)", "dest": "/public/$1" }
   ],
   "cleanUrls": true
