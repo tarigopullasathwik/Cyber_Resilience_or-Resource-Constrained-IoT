@@ -45,8 +45,6 @@ from typing import Any, Deque, Dict, List, Optional, Sequence, Tuple
 
 import numpy as np
 import pandas as pd
-from sklearn.ensemble import IsolationForest
-
 if __package__ is None or __package__ == "":
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
@@ -181,27 +179,28 @@ class IsolationForestScorer:
     def __init__(self, config: Optional[DetectorConfig] = None, seed: int = 0):
         self.config = config or DetectorConfig()
         self.seed = int(seed)
-        self.model: Optional[IsolationForest] = None
+        self.model: Optional[Dict[str, np.ndarray]] = None
         self._med_df: float = 0.0
         self._scale_df: float = 1.0
         self.trained: bool = False
 
     def fit(self, X: np.ndarray) -> "IsolationForestScorer":
+        """Fit a lightweight robust-distance substitute for IsolationForest.
+
+        The dashboard runs on resource-constrained devices, so keeping this
+        scorer NumPy-only avoids shipping scikit-learn's large compiled runtime
+        while preserving the calibrated, monotonic anomaly-score contract.
+        """
         X = np.asarray(X, dtype=float)
-        if X.shape[0] < 10:
+        if X.ndim != 2 or X.shape[0] < 10:
             self.model, self.trained = None, False
             return self
-        self.model = IsolationForest(
-            n_estimators=int(self.config.if_n_estimators),
-            max_samples=int(min(self.config.if_max_samples, X.shape[0])),
-            contamination=float(self.config.if_contamination),
-            random_state=self.seed,
-            n_jobs=1,
-        )
-        self.model.fit(X)
-        decision = self.model.decision_function(X)
-        med = float(np.median(decision))
-        mad = float(np.median(np.abs(decision - med)))
+        center = np.median(X, axis=0)
+        scale = np.maximum(1.4826 * np.median(np.abs(X - center), axis=0), EPS)
+        distances = np.mean(np.abs(X - center) / scale, axis=1)
+        med = float(np.median(distances))
+        mad = float(np.median(np.abs(distances - med)))
+        self.model = {"center": center, "scale": scale}
         self._med_df = med
         self._scale_df = max(1.4826 * mad, EPS)
         self.trained = True
@@ -213,8 +212,10 @@ class IsolationForestScorer:
         X = np.asarray(X, dtype=float)
         if X.ndim == 1:
             X = X.reshape(1, -1)
-        decision = self.model.decision_function(X)
-        z = (self._med_df - decision) / self._scale_df
+        distances = np.mean(
+            np.abs(X - self.model["center"]) / self.model["scale"], axis=1
+        )
+        z = (distances - self._med_df) / self._scale_df
         return _squash(z, self.config.z_scale)
 
     def score(self, x: np.ndarray) -> float:
